@@ -61,15 +61,19 @@ public class Conta {
 	
 	public void imprimirInformacoes() {
 		System.out.println("");
+		System.out.println("Dados da Conta:");
 		System.out.println("Numero da Conta: " + this.numeroConta);
 		System.out.println("Saldo: " + this.saldoConta);
 		System.out.println("Limite: " + this.limiteConta);
 		System.out.println("Possui emprestimo ativo: " + this.emprestimo);
 		System.out.println("");
+		System.out.println("Dados do Banco:");
 		getBanco().imprimirInformacoes();
 		System.out.println("");
+		System.out.println("Dados do Cliente:");
 		getCliente().imprimirInformacoes();
 		System.out.println("");
+		System.out.println("Dados do Atendente");
 		getAtendente().imprimirInformacoes();
 		System.out.println("");
 	}

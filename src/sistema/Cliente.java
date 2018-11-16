@@ -11,8 +11,11 @@ public class Cliente extends Pessoa{
 			this.numeroContrato = numeroContrato;
 		}
 	
-	
+	@Override
 	public void imprimirInformacoes() {
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("CPF: " + this.getCpf());
+		getData().imprimirInformacoes();
 		System.out.println("Numero de Contrato: " + this.getNumeroContrato());
 	}
 	

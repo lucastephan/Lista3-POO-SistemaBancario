@@ -1,6 +1,6 @@
 package sistema;
 
-public class Atendente {
+public class Atendente extends Pessoa {
 	public int matricula;
 
 	// Getters e Setters
@@ -11,8 +11,11 @@ public class Atendente {
 			this.matricula = matricula;
 		}
 	
-		
+	@Override	
 	public void imprimirInformacoes() {
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("CPF: " + this.getCpf());
+		getData().imprimirInformacoes();
 		System.out.println("Matricula: " + this.getMatricula());
 	}
 	
