@@ -109,8 +109,6 @@ public class Conta {
 				this.saldoConta += valor;
 				return this.emprestimo = true;
 			}
-		} else {
-			System.out.println("Nao e possivel solicitar um emprestimo.");
 		}
 		return false;
 	}
