@@ -7,28 +7,38 @@ Foi necessário me ater as solicitações do professor, mesmo que o projeto pude
 As demandas impostas pelo professor foram as seguintes:
 
 • Criar uma classe Banco:
+
 Atributos: nomeBanco e cnpj
+
 Métodos: 
 - void imprimirInformacoes();  get e set
 
 • Criar classe Data:
+
 Atributos: dia, mês, ano --- todos do tipo int
+
 Métodos: 
 - void imprimirInformacoes();  get e set
 
 • Criar classe Pessoa:
+
 Atributos:nome, CPF, data
+
 Métodos: 
 - void imprimirInformacoes();  get e set
 - int verificarIdade(Pessoa pessoa, int anoAtual) 
 
 • Criar a classe Cliente:
+
 Atributos:numeroContrato
+
 Métodos: 
 - void imprimirInformacoes();  get e set
 
 • Criar a Classe Atendente:
+
 Atributos: matricula
+
 Métodos: 
 - void imprimirInformacoes();  get e set
 
