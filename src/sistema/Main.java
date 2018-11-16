@@ -30,6 +30,20 @@ public class Main {
 			conta1.setAtendente(atendente1);
 			
 			
+		Pessoa pessoa1 = new Pessoa();
+			pessoa1.setNome("Gotardo");
+			pessoa1.setCpf("1092830198098");
+			Data dataPessoa1 = new Data(01, 02, 2003);
+			pessoa1.setData(dataPessoa1);
+			
+			
+		conta1.sacar(27000);
+		conta1.depositar(100);
+		System.out.println("Saldo disponivel: " + conta1.mostrarSaldoTotalDisponivel());
+		System.out.println("Saldo positivo: " + conta1.verificaSaldoTotalDisponivelPositivo(conta1.getSaldoConta(), conta1.getLimiteConta()));
+		// conta1.pegarEmprestimo(1200);
+		System.out.println("Pegou emprestimo: " + conta1.imprimirPegouEmprestimo(conta1.isEmprestimo()));
+		
 		conta1.imprimirInformacoes();
 
 	}

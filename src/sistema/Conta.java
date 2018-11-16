@@ -92,7 +92,6 @@ public class Conta {
 		return saldoDisponivel;
 	}
 	
-	// Verificar
 	public boolean verificaSaldoTotalDisponivelPositivo(double saldo, double limite) {
 		saldo = this.saldoConta;
 		limite = this.limiteConta;
@@ -103,7 +102,7 @@ public class Conta {
 		}
 	}
 	
-	// Verificar
+	// Verificar - aparentemente com erro
 	public boolean pegarEmprestimo(double valor) {
 		if (this.emprestimo == false) {
 			if (valor <= 500) {

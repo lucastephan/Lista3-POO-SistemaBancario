@@ -17,6 +17,7 @@ public class Atendente extends Pessoa {
 		System.out.println("CPF: " + this.getCpf());
 		getData().imprimirInformacoes();
 		System.out.println("Matricula: " + this.getMatricula());
+		System.out.println("Idade: " + this.verificarIdade(this, 2018) + " anos");
 	}
 	
 }

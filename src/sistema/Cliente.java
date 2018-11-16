@@ -17,6 +17,7 @@ public class Cliente extends Pessoa{
 		System.out.println("CPF: " + this.getCpf());
 		getData().imprimirInformacoes();
 		System.out.println("Numero de Contrato: " + this.getNumeroContrato());
+		System.out.println("Idade: " + this.verificarIdade(this, 2018) + " anos");
 	}
 	
 }

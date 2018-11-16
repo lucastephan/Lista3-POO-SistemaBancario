@@ -30,6 +30,7 @@ public class Pessoa {
 		System.out.println("Nome: " + this.getNome());
 		System.out.println("CPF: " + this.getCpf());
 		getData().imprimirInformacoes();
+		System.out.println("Idade: " + this.verificarIdade(this, 2018) + " anos");
 	}
 	
 	public int verificarIdade(Pessoa pessoa, int anoAtual) {
