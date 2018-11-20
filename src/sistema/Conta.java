@@ -86,23 +86,18 @@ public class Conta {
 		this.saldoConta += valor;
 	}
 	
-	double saldoDisponivel;
 	public double mostrarSaldoTotalDisponivel() {
-		saldoDisponivel = this.saldoConta + this.limiteConta;
-		return saldoDisponivel;
+		return this.saldoConta + this.limiteConta;
 	}
 	
 	public boolean verificaSaldoTotalDisponivelPositivo(double saldo, double limite) {
-		saldo = this.saldoConta;
-		limite = this.limiteConta;
-		if (saldoDisponivel > 0) {
+		if ((saldo + limite) > 0) {
 			return true;
 		} else {
 			return false;
 		}
 	}
 	
-	// Verificar - aparentemente com erro
 	public boolean pegarEmprestimo(double valor) {
 		if (this.emprestimo == false) {
 			if (valor <= 500) {
@@ -114,7 +109,6 @@ public class Conta {
 	}
 	
 	public String imprimirPegouEmprestimo(boolean emprestimo) {
-		emprestimo = this.emprestimo;
 		if (emprestimo == true) {
 			return "Pegou emprestimo";
 		} else {
