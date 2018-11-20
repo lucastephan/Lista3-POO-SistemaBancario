@@ -13,11 +13,8 @@ public class Atendente extends Pessoa {
 	
 	@Override	
 	public void imprimirInformacoes() {
-		System.out.println("Nome: " + this.getNome());
-		System.out.println("CPF: " + this.getCpf());
-		getData().imprimirInformacoes();
+		super.imprimirInformacoes();
 		System.out.println("Matricula: " + this.getMatricula());
-		System.out.println("Idade: " + this.verificarIdade(this, 2018) + " anos");
 	}
 	
 }

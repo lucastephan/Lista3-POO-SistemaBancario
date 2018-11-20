@@ -13,11 +13,8 @@ public class Cliente extends Pessoa{
 	
 	@Override
 	public void imprimirInformacoes() {
-		System.out.println("Nome: " + this.getNome());
-		System.out.println("CPF: " + this.getCpf());
-		getData().imprimirInformacoes();
+		super.imprimirInformacoes();
 		System.out.println("Numero de Contrato: " + this.getNumeroContrato());
-		System.out.println("Idade: " + this.verificarIdade(this, 2018) + " anos");
 	}
 	
 }
